@@ -165,6 +165,21 @@ const ErrorIcon = styled.img`
   top: 18px;
 `;
 
+const Footer = styled.footer`
+  color: ${({ theme }): string => theme.colors.white};
+  text-align: center;
+  margin-top: -42px;
+  a {
+    color: ${({ theme }): string => theme.colors.white};
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s ease-out;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+`;
+
 const App: React.FC = () => {
   const schema = yup.object().shape({
     firstName: yup
@@ -278,6 +293,17 @@ const App: React.FC = () => {
           </Form>
         </section>
       </Wrapper>
+
+      <Footer>
+        Challenge by{' '}
+        <a
+          href="https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1"
+          target="__blank"
+        >
+          Frontend Mentors
+        </a>
+        . Coded by <a target="__blank" href="https://amalcodes.com/">Alfian Akmal Hanantio.</a>
+      </Footer>
     </ThemeProvider>
   );
 };
