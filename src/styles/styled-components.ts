@@ -2,10 +2,15 @@ import * as styledComponents from 'styled-components';
 
 export interface Theme {
   colors: {
-    background: string;
-    primary: string;
-    textPrimary: string;
-    textSecondary: string;
+    primaryRed: string;
+    primaryGreen: string;
+    accentBlue: string;
+    darkBlue: string;
+    grayishBlue: string;
+    white: string;
+  };
+  fontSize: {
+    base: string;
   };
 }
 const {
