@@ -169,6 +169,7 @@ const Footer = styled.footer`
   color: ${({ theme }): string => theme.colors.white};
   text-align: center;
   margin-top: -42px;
+  font-size: 12px;
   a {
     color: ${({ theme }): string => theme.colors.white};
     font-weight: 700;
